@@ -10,7 +10,7 @@ public class PasteryApiException extends RuntimeException {
 	private final String message;
 
 	public PasteryApiException(HttpStatus status, String message) {
-		super();
+		super(message);
 		this.status = status;
 		this.message = message;
 	}

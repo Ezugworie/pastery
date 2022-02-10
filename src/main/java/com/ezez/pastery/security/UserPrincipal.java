@@ -1,6 +1,6 @@
 package com.ezez.pastery.security;
 
-import com.ezez.pastery.model.user.User;
+import com.ezez.pastery.model.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

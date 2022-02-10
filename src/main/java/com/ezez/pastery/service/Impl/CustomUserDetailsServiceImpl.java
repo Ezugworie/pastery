@@ -1,7 +1,7 @@
 package com.ezez.pastery.service.Impl;
 
 
-import com.ezez.pastery.model.user.User;
+import com.ezez.pastery.model.User;
 import com.ezez.pastery.repository.UserRepository;
 import com.ezez.pastery.security.UserPrincipal;
 import com.ezez.pastery.service.CustomUserDetailsService;

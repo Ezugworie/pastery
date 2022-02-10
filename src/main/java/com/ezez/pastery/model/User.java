@@ -1,5 +1,6 @@
-package com.ezez.pastery.model.user;
+package com.ezez.pastery.model;
 
+import com.ezez.pastery.model.Address;
 import com.ezez.pastery.model.audit.DateAudit;
 import com.ezez.pastery.model.role.Role;
 import com.fasterxml.jackson.annotation.JsonProperty;

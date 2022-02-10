@@ -1,7 +1,7 @@
 package com.ezez.pastery.repository;
 
 import com.ezez.pastery.exception.ResourceNotFoundException;
-import com.ezez.pastery.model.user.User;
+import com.ezez.pastery.model.User;
 import com.ezez.pastery.security.UserPrincipal;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

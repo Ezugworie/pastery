@@ -21,8 +21,8 @@ import java.util.TimeZone;
 
 
 @SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
-//@EnableSwagger2
 public class PasteryApplication {
+
     @Autowired
     RoleService roleService;
 
@@ -39,7 +39,10 @@ public class PasteryApplication {
                 .info(new Info()
                         .title(applicationDescription)
                         .version(applicationVersion)
-                        .contact(new Contact().name("Iyke Ezugworie").email("i.ezugworie@gmail.com").url("https://pastery.app"))
+                        .contact(new Contact()
+                                .name("Iyke Ezugworie")
+                                .email("i.ezugworie@gmail.com")
+                                .url("https://pastery.app"))
                         .termsOfService("http://swagger.io/terms/")
                         .license(new License().name("Apache 2.0").url("http://springdoc.org")));
     }

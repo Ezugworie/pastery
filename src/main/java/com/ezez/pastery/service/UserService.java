@@ -1,7 +1,7 @@
 package com.ezez.pastery.service;
 
 
-import com.ezez.pastery.model.user.User;
+import com.ezez.pastery.model.User;
 import com.ezez.pastery.payload.UserIdentityAvailability;
 import com.ezez.pastery.payload.UserProfile;
 import com.ezez.pastery.payload.UserSummary;

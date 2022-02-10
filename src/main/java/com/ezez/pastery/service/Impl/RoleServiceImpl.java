@@ -3,7 +3,6 @@ package com.ezez.pastery.service.Impl;
 import com.ezez.pastery.model.role.Role;
 import com.ezez.pastery.model.role.RoleName;
 import com.ezez.pastery.repository.RoleRepository;
-import com.ezez.pastery.security.JwtAuthenticationEntryPoint;
 import com.ezez.pastery.service.RoleService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

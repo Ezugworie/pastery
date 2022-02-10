@@ -1,4 +1,4 @@
-package com.ezez.pastery.model.user;
+package com.ezez.pastery.model;
 
 import com.ezez.pastery.model.audit.UserDateAudit;
 import com.fasterxml.jackson.annotation.JsonIgnore;

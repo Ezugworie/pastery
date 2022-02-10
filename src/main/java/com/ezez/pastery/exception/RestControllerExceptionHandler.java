@@ -54,9 +54,8 @@ public class RestControllerExceptionHandler {
 	@ExceptionHandler(ResourceNotFoundException.class)
 	@ResponseBody
 	public ResponseEntity<ApiResponse> resolveException(ResourceNotFoundException exception) {
-		ApiResponse apiResponse = exception.getApiResponse();
-
-		return new ResponseEntity<>(apiResponse, HttpStatus.NOT_FOUND);
+		ApiResponse response = exception.getApiResponse();
+		return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
 	}
 
 	@ExceptionHandler(AccessDeniedException.class)
@@ -64,7 +63,7 @@ public class RestControllerExceptionHandler {
 	public ResponseEntity<ApiResponse> resolveException(AccessDeniedException exception) {
 		ApiResponse apiResponse = exception.getApiResponse();
 
-		return new ResponseEntity< >(apiResponse, HttpStatus.FORBIDDEN);
+		return new ResponseEntity<>(apiResponse, HttpStatus.FORBIDDEN);
 	}
 
 	@ExceptionHandler({ MethodArgumentNotValidException.class })

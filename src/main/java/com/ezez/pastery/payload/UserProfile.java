@@ -1,7 +1,7 @@
 package com.ezez.pastery.payload;
 
 
-import com.ezez.pastery.model.user.Address;
+import com.ezez.pastery.model.Address;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

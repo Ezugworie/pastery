@@ -27,7 +27,8 @@ public class ApiResponse implements Serializable {
 	@JsonIgnore
 	private HttpStatus status;
 
-	@JsonProperty("token")
+//	@JsonProperty("token")
+	@JsonIgnore
 	private JwtAuthenticationResponse jwtAuthenticationResponse;
 
 	public ApiResponse() {

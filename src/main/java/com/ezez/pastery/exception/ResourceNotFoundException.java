@@ -34,12 +34,12 @@ public class ResourceNotFoundException extends RuntimeException {
 	}
 
 	public ApiResponse getApiResponse() {
+		this.setApiResponse();
 		return apiResponse;
 	}
 
 	private void setApiResponse() {
 		String message = String.format("%s not found with %s: '%s'", resourceName, fieldName, fieldValue);
-
 		apiResponse = new ApiResponse(Boolean.FALSE, message);
 	}
 }
