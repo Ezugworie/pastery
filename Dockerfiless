@@ -1,0 +1,12 @@
+FROM openjdk:8-jdk-alpine
+MAINTAINER pastery.app
+#ENV APP_HOME=/usr/app/
+WORKDIR $APP_HOME
+COPY target/pastery-0.0.1-SNAPSHOT.jar pastery-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar","/pastery-0.0.1-SNAPSHOT.jar"]
+#EXPOSE 8080
+#CMD ["java", "-jar", "app.jar"]
+
+#FROM openjdk:8-jdk-alpine
+#ARG JAR_FILE=target/pastery-0.0.1-SNAPSHOT.jar
+#ADD ${JAR_FILE} app.jar
