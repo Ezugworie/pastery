@@ -1,25 +1,18 @@
 package com.ezez.pastery.controller;
 
-import com.ezez.pastery.exception.PasteryApiException;
 import com.ezez.pastery.exception.ResourceNotFoundException;
 import com.ezez.pastery.model.PasteResource;
-import com.ezez.pastery.payload.response.ApiResponse;
 import com.ezez.pastery.repository.PasteResourceRepository;
 import com.ezez.pastery.service.PasteResourceService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("api/v1")

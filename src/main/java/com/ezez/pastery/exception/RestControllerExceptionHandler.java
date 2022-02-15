@@ -21,18 +21,6 @@ import java.util.Objects;
 @ControllerAdvice
 public class RestControllerExceptionHandler {
 
-	public ResponseEntity<ApiResponse> resolveException(PasteryApiException exception) {
-		String message = exception.getMessage();
-		HttpStatus status = exception.getStatus();
-
-		ApiResponse apiResponse = new ApiResponse();
-
-		apiResponse.setSuccess(Boolean.FALSE);
-		apiResponse.setMessage(message);
-
-		return new ResponseEntity<>(apiResponse, status);
-	}
-
 	@ExceptionHandler(UnauthorizedException.class)
 	@ResponseBody
 	@ResponseStatus(code = HttpStatus.UNAUTHORIZED)
